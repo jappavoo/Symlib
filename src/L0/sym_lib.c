@@ -38,8 +38,7 @@ long sym_elevate(){
 long sym_lower(){
   /* return sym_do_syscall(SYSCALL_LOWER); */
   RESET_KERN_GS_USER_GS;
-  return sym_mode_shift(SYM_LOWER_FLAG );
-
+  return sym_mode_shift(SYM_LOWER_FLAG);
 }
 
 long sym_check_elevate(){
